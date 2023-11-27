@@ -1,4 +1,6 @@
 html {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-size: 62.5%; /*Por defecto 16px = 1rem pero lo cambiamos para que 10px= 1rem (hacer mas faciles las conversiones)*/
 }
@@ -9,6 +11,7 @@ html {
 
 :root {
   --color1: #88b54d;
+  --color2: #ff6f1c;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 .card {
@@ -47,9 +50,20 @@ body {
   border-radius: 50%;
   background: #f8fa7c;
   box-shadow: 0px -10px 20px #d8db26;
+  margin-top: -45px;
 }
 .card-body-contentimg-img {
   padding: 25px;
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.card-body-title span {
+  color: var(--color2);
+}
+.card-body-text {
+  font-size: 1.7rem;
 }
 .card-footer {
   display: flex;
@@ -58,4 +72,7 @@ body {
 }
 .card-footer-poder {
   text-align: center;
+}
+.card-footer-poder h3 {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
